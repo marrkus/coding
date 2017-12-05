@@ -10,8 +10,9 @@ sudo cp -r coding/ /etc/puppet/modules/
 cd /etc/puppet/
 
 sudo puppet apply --modulepath modules/ -e 'class {"coding":}'
-nano /home/xubuntu/public_html/index.html
 firefox localhost/~xubuntu
+nano /home/xubuntu/public_html/index.html
+
 
 echo "***************************"
 echo " "
