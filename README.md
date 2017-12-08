@@ -1,5 +1,5 @@
-# coding
-Coding Puppet module for Java and HTML
+# Java and HTML coding
+Puppet module for Java and HTML
 
 ```wget https://raw.githubusercontent.com/marrkus/coding/master/start.sh```
 
