@@ -10,9 +10,9 @@ sudo cp -r coding/ /etc/puppet/modules/
 cd /etc/puppet/
 sudo puppet apply --modulepath modules/ -e 'class {"coding":}'
 
-firefox https://www.tutorialspoint.com/eclipse/eclipse_create_java_project.htm
-firefox https://www.w3schools.com/html/html_elements.asp
-firefox localhost/~$USER
+firefox -new-tab -url https://www.tutorialspoint.com/eclipse/eclipse_create_java_project.htm
+firefox -new-tab -url https://www.w3schools.com/html/html_elements.asp
+firefox -new-tab -url localhost/~$USER
 nano /home/xubuntu/public_html/index.html
 
 
