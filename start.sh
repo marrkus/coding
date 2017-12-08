@@ -6,7 +6,7 @@ sudo apt-get -y install puppet git
 git clone https://github.com/marrkus/coding.git
 
 
-cd codind/modules
+cd coding/modules
 sudo cp -r coding/ /etc/puppet/modules/
 cd /etc/puppet/
 
