@@ -10,6 +10,7 @@ cd /etc/puppet/
 
 sudo puppet apply --modulepath modules/ -e 'class {"coding":}'
 firefox localhost/~$USER
+firefox https://www.tutorialspoint.com/eclipse/eclipse_create_java_project.htm
 nano /home/$USER/public_html/index.html
 
 
