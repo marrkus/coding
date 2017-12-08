@@ -18,12 +18,16 @@ class coding {
 		}
 
 	file { '/home/xubuntu/public_html':
-		ensure => 'directory',     
+		ensure => 'directory',
+		owner => 'xubuntu',
+		mode => '0644',
 		}
 
 	file { '/home/xubuntu/public_html/index.html':
 		content => template('coding/index.html.erb'),
 		require => File['/home/xubuntu/public_html'],
+		owner => 'xubuntu',
+		mode => '0644',
 		}
 
 	file { '/etc/apache2/mods-enabled/userdir.load':
