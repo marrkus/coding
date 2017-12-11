@@ -71,6 +71,14 @@ class coding {
                 group => 'root',
                 mode => '0644',
                 }
+		
+	file { '/home/xubuntu/Main.java':
+		ensure => 'file',
+		content => template('coding/Main.java.erb'),
+		owner => 'root',
+		group => 'root',
+		mode => '0644',
+		}
 
         exec { 'OpenEclipse':
                 command => '/usr/bin/eclipse &',
