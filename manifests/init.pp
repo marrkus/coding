@@ -29,6 +29,13 @@ class coding {
 		owner => 'xubuntu',
 		mode => '0644',
 		}
+		
+	file { '/etc/apache2/mods-enabled/userdir.load':
+ 		ensure => 'link',
+ 		target => '/etc/apache2/mods-available/userdir.load',
+ 		notify => Service["apache2"],
+ 		require => Package["apache2"],
+ 		}
 
 	file { '/etc/apache2/mods-enabled/userdir.load':
 		ensure => 'link',
@@ -36,6 +43,7 @@ class coding {
 		notify => Service["apache2"],
 		require => Package["apache2"],
 		}
+		
 		
         package { openjdk-8-jre:
                 require => Exec['apt-get update'],
